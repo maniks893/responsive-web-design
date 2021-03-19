@@ -1,0 +1,191 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*=== LANDING GRADIENT ===*/
+.landing{
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #08659e, #6cca1f);
+}
+
+
+/*=== HEADINGS & ICONS ===*/
+h4{
+  color: white;
+  font-weight: 200;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  padding-top: 7rem;
+  text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .15);
+}
+
+h1{
+  color: white;
+  font-weight: 200;
+  font-size: 3rem;
+  letter-spacing: .2rem;
+  padding-top: 1.8rem 0;
+  text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .15);
+}
+
+.home{
+  padding-bottom: 7rem;
+}
+
+.fa-stack.fa-2x{
+  font-size: 2.3rem;
+}
+
+.fa-stack-2x{
+  opacity: .15;
+}
+
+.fa-stack-1x{
+  opacity: .7;
+}
+
+/*=== NAVIGATION ===*/
+.navbar-brand img{
+  height: 3rem;
+  padding-top: .2rem;
+}
+
+.navbar{
+  background-image: linear-gradient(90deg, #08659e, #6cca1f);
+  padding-left: .3rem 0 .6rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .15);
+}
+
+.nav-link{
+  color: white!important;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: .12rem;
+  font-size: 1.2rem;
+  text-shadow: .05rem .05rem .05rem rgba(0, 0, 0, .15);
+  margin-right: .8rem;
+}
+
+.nav-link:hover{
+  
+  color: black!important;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: .12rem;
+  font-size: 1.2rem;
+  text-shadow: .05rem .05rem .05rem rgba(250, 248, 248, 0.973);
+  margin-right: .8rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/*=== CONTENT STYLE ===*/
+.fa-asterisk{
+  font-size: 1rem;
+  margin-bottom: .5rem;
+}
+
+h3{
+  font-weight: 300;
+}
+
+.w-100{
+  box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .1);
+}
+
+
+
+/*=== FIXED BACKGROUND IMG ===*/
+
+.fixed-background {
+  overflow: hidden; /*-- Correction for iOS --*/
+  padding: 12rem 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+}
+
+.fixed{
+  background-image: url('../img/macbook.jpg');
+  position: fixed;
+}
+
+/*=== FOOTER ===*/
+
+
+
+/*=== SOCKET ===*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Devices under 992px (xl) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
